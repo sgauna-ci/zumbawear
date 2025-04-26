@@ -14,7 +14,7 @@
       margin: 0;
     }
     h1 {
-      font-size: 26px;
+      font-size: 28px;
       margin-bottom: 20px;
     }
     .main-image {
@@ -29,7 +29,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
     .gallery img {
       width: 30%;
@@ -37,17 +37,32 @@
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
+    .stock {
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+    .stock-item {
+      margin: 5px 0;
+    }
     .section {
       margin-bottom: 40px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .price-info {
-      font-size: 18px;
-      margin-bottom: 15px;
-      line-height: 1.4;
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #222;
     }
-    .stock {
-      font-size: 16px;
-      margin: 20px 0;
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
     }
     .mercadopago-logo {
       width: 80px;
@@ -58,27 +73,27 @@
       display: inline-block;
       background-color: #25D366;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 10px;
-      font-size: 16px;
+      font-size: 18px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      margin-top: 20px;
       transition: background 0.3s;
     }
     .whatsapp:hover {
       background-color: #1ebe5d;
     }
-    button {
-      margin-top: 10px;
-    }
     @media (min-width: 768px) {
       h1 {
-        font-size: 32px;
+        font-size: 34px;
       }
-      .price-info {
-        font-size: 20px;
+      .section-title {
+        font-size: 26px;
+      }
+      .price {
+        font-size: 22px;
       }
     }
   </style>
@@ -97,13 +112,36 @@
     <img src="04.png" alt="Foto auxiliar 3">
   </div>
 
+  <div class="stock">
+    <strong>📦 Stock disponible:</strong><br><br>
+    <div class="stock-item">👕 8 remeras celestes</div>
+    <div class="stock-item">👚 8 remeras rosadas</div>
+    <div class="stock-item">💛 8 remeras amarillas</div>
+  </div>
+
   <div class="section">
-    <div class="price-info">
-      <strong>Pack completo de 12 remeras (4 de cada color):</strong><br> $6000
-      <br><br>
-      Con MercadoPago 
+    <div class="section-title">Compra por unidad</div>
+
+    <div class="price">💵 Contado / Transferencia: $550</div>
+    <div class="price">
+      💳 Con MercadoPago: $600
       <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" class="mercadopago-logo">
-      : $6700
+    </div>
+
+    <div>
+      <script src="https://www.mercadopago.com.uy/integrations/v1/web-payment-checkout.js"
+        data-preference-id="714360-9c577068-c3f2-4db7-ba13-679ef4b42e7d" data-source="button">
+      </script>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Compra pack completo (12 remeras)</div>
+
+    <div class="price">💵 Contado / Transferencia: $6000</div>
+    <div class="price">
+      💳 Con MercadoPago: $6700
+      <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" class="mercadopago-logo">
     </div>
 
     <div>
@@ -114,31 +152,11 @@
   </div>
 
   <div class="section">
-    <p class="stock">
-      <strong>Stock disponible:</strong><br>
-      8 remeras celestes<br>
-      8 remeras rosadas<br>
-      8 remeras amarillas
-    </p>
+    <div class="section-title">¿Querés pagar contado o transferencia?</div>
+    <p>📩 Escribime directamente para coordinar:</p>
     <a class="whatsapp" href="https://wa.me/59899631069" target="_blank">
-      📲 Haz tu pedido por WhatsApp
+      📲 Pedir por WhatsApp
     </a>
-  </div>
-
-  <div class="section">
-    <div class="price-info">
-      <strong>Compra por unidad:</strong><br>
-      1 remera: $550<br>
-      Con MercadoPago 
-      <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" class="mercadopago-logo">
-      : $600
-    </div>
-
-    <div>
-      <script src="https://www.mercadopago.com.uy/integrations/v1/web-payment-checkout.js"
-        data-preference-id="714360-9c577068-c3f2-4db7-ba13-679ef4b42e7d" data-source="button">
-      </script>
-    </div>
   </div>
 
 </body>
