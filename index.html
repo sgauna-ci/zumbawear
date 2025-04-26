@@ -1,39 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liquidación prendas ZumbaWear</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquidación prendas ZumbaWear</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 15px;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .main-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+    .gallery img {
+      width: 30%;
+      max-width: 120px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .price-info {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .stock {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+    .mercadopago-logo {
+      width: 80px;
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+    .whatsapp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 16px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+    button {
+      margin-top: 10px;
+    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+      .price-info {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
+<body>
 
-    <h1>Liquidación prendas ZumbaWear</h1>
+  <h1>Liquidación prendas ZumbaWear</h1>
+
+  <div>
+    <img src="01.png" alt="Foto principal" class="main-image">
+  </div>
+
+  <div class="gallery">
+    <img src="02.png" alt="Foto auxiliar 1">
+    <img src="03.png" alt="Foto auxiliar 2">
+    <img src="04.png" alt="Foto auxiliar 3">
+  </div>
+
+  <div class="section">
+    <div class="price-info">
+      <strong>Pack completo de 12 remeras (4 de cada color):</strong><br> $6000
+      <br><br>
+      Con MercadoPago 
+      <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" class="mercadopago-logo">
+      : $6700
+    </div>
 
     <div>
-        <img src="01.jpg" alt="Principal" style="width: 80%; max-width: 600px; margin-bottom: 20px;">
+      <script src="https://www.mercadopago.com.uy/integrations/v1/web-payment-checkout.js"
+        data-preference-id="714360-74a0e56d-75ac-423a-a904-4012240f6880" data-source="button">
+      </script>
     </div>
+  </div>
 
-    <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
-        <img src="02.jpg" alt="Auxiliar 1" style="width: 30%; max-width: 150px;">
-        <img src="03.jpg" alt="Auxiliar 2" style="width: 30%; max-width: 150px;">
-        <img src="04.jpg" alt="Auxiliar 3" style="width: 30%; max-width: 150px;">
-    </div>
+  <div class="section">
+    <p class="stock">
+      <strong>Stock disponible:</strong><br>
+      8 remeras celestes<br>
+      8 remeras rosadas<br>
+      8 remeras amarillas
+    </p>
+    <a class="whatsapp" href="https://wa.me/59899631069" target="_blank">
+      📲 Haz tu pedido por WhatsApp
+    </a>
+  </div>
 
-    <div style="margin-bottom: 20px;">
-        <p style="font-size: 18px;"><strong>Pack completo de 12 remeras (4 de cada color):</strong> $6000</p>
-        <p style="font-size: 18px;">
-            Con MercadoPago
-            <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" style="width: 100px; vertical-align: middle;">
-            : $6700
-        </p>
+  <div class="section">
+    <div class="price-info">
+      <strong>Compra por unidad:</strong><br>
+      1 remera: $550<br>
+      Con MercadoPago 
+      <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" class="mercadopago-logo">
+      : $600
     </div>
 
     <div>
-        <script src="https://www.mercadopago.com.uy/integrations/v1/web-payment-checkout.js"
-                data-preference-id="714360-74a0e56d-75ac-423a-a904-4012240f6880" 
-                data-source="button">
-        </script>
+      <script src="https://www.mercadopago.com.uy/integrations/v1/web-payment-checkout.js"
+        data-preference-id="714360-9c577068-c3f2-4db7-ba13-679ef4b42e7d" data-source="button">
+      </script>
     </div>
+  </div>
 
 </body>
 </html>
